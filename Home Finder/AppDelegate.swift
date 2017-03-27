@@ -2,20 +2,27 @@
 //  AppDelegate.swift
 //  Home Finder
 //
-//  Created by Farshad on 3/25/17.
+//  Created by Farshad on 3/26/17.
 //  Copyright © 2017 WolfskiN. All rights reserved.
 //
 
 import UIKit
+import SwiftDate
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var locationBroker: LocationBroker!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+        locationBroker = LocationBroker()
+        locationBroker.askPermission()
+        locationBroker.getLocation()
+        
         return true
     }
 

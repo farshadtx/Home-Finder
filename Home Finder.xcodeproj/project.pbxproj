@@ -13,6 +13,10 @@
 		F8603EA21E8656D4009E4DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8603EA11E8656D4009E4DBB /* Assets.xcassets */; };
 		F8603EA51E8656D4009E4DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8603EA31E8656D4009E4DBB /* LaunchScreen.storyboard */; };
 		F8603EB01E8656D4009E4DBB /* Home_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8603EAF1E8656D4009E4DBB /* Home_FinderTests.swift */; };
+		F8603EBB1E8656F5009E4DBB /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F8603EBA1E8656F5009E4DBB /* Cartfile */; };
+		F8603EBD1E8738AD009E4DBB /* LocationBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8603EBC1E8738AD009E4DBB /* LocationBroker.swift */; };
+		F8603EC01E87507A009E4DBB /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8603EBF1E87507A009E4DBB /* SwiftDate.framework */; };
+		F8603EC81E8895E5009E4DBB /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8603EC31E87E546009E4DBB /* PromiseKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		F8603EAB1E8656D4009E4DBB /* Home FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Home FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8603EAF1E8656D4009E4DBB /* Home_FinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_FinderTests.swift; sourceTree = "<group>"; };
 		F8603EB11E8656D4009E4DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8603EBA1E8656F5009E4DBB /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		F8603EBC1E8738AD009E4DBB /* LocationBroker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationBroker.swift; sourceTree = "<group>"; };
+		F8603EBF1E87507A009E4DBB /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
+		F8603EC31E87E546009E4DBB /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8603EC01E87507A009E4DBB /* SwiftDate.framework in Frameworks */,
+				F8603EC81E8895E5009E4DBB /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,9 @@
 		F8603E8E1E8656D4009E4DBB = {
 			isa = PBXGroup;
 			children = (
+				F8603EBA1E8656F5009E4DBB /* Cartfile */,
+				F8603EC31E87E546009E4DBB /* PromiseKit.framework */,
+				F8603EBF1E87507A009E4DBB /* SwiftDate.framework */,
 				F8603E991E8656D4009E4DBB /* Home Finder */,
 				F8603EAE1E8656D4009E4DBB /* Home FinderTests */,
 				F8603E981E8656D4009E4DBB /* Products */,
@@ -79,6 +92,7 @@
 			children = (
 				F8603E9A1E8656D4009E4DBB /* AppDelegate.swift */,
 				F8603E9C1E8656D4009E4DBB /* ViewController.swift */,
+				F8603EBC1E8738AD009E4DBB /* LocationBroker.swift */,
 				F8603E9E1E8656D4009E4DBB /* Main.storyboard */,
 				F8603EA11E8656D4009E4DBB /* Assets.xcassets */,
 				F8603EA31E8656D4009E4DBB /* LaunchScreen.storyboard */,
@@ -106,6 +120,7 @@
 				F8603E931E8656D4009E4DBB /* Sources */,
 				F8603E941E8656D4009E4DBB /* Frameworks */,
 				F8603E951E8656D4009E4DBB /* Resources */,
+				F8603EBE1E87503B009E4DBB /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -146,7 +161,13 @@
 				TargetAttributes = {
 					F8603E961E8656D4009E4DBB = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EBWXN6RQ82;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F8603EAA1E8656D4009E4DBB = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -181,6 +202,7 @@
 			files = (
 				F8603EA51E8656D4009E4DBB /* LaunchScreen.storyboard in Resources */,
 				F8603EA21E8656D4009E4DBB /* Assets.xcassets in Resources */,
+				F8603EBB1E8656F5009E4DBB /* Cartfile in Resources */,
 				F8603EA01E8656D4009E4DBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +216,25 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F8603EBE1E87503B009E4DBB /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8603E931E8656D4009E4DBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,6 +242,7 @@
 			files = (
 				F8603E9D1E8656D4009E4DBB /* ViewController.swift in Sources */,
 				F8603E9B1E8656D4009E4DBB /* AppDelegate.swift in Sources */,
+				F8603EBD1E8738AD009E4DBB /* LocationBroker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +293,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -268,6 +311,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -282,13 +329,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				GENERATE_PKGINFO_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,6 +352,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -318,6 +370,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -326,11 +382,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				GENERATE_PKGINFO_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -339,8 +399,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBWXN6RQ82;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Home Finder/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/Carthage";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.farshad.Home-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -351,8 +417,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBWXN6RQ82;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Home Finder/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/Carthage";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobi.farshad.Home-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
