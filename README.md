@@ -1,3 +1,3 @@
-Home Finder
+# Home Finder
 
-** Tracking location in background mode at midnight
+#### Tracking location in background mode at midnight
