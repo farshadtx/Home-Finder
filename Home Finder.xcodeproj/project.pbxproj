@@ -16,7 +16,6 @@
 		F8603EBB1E8656F5009E4DBB /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F8603EBA1E8656F5009E4DBB /* Cartfile */; };
 		F8603EBD1E8738AD009E4DBB /* LocationBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8603EBC1E8738AD009E4DBB /* LocationBroker.swift */; };
 		F8603EC01E87507A009E4DBB /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8603EBF1E87507A009E4DBB /* SwiftDate.framework */; };
-		F8603EC81E8895E5009E4DBB /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8603EC31E87E546009E4DBB /* PromiseKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 		F8603EBA1E8656F5009E4DBB /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		F8603EBC1E8738AD009E4DBB /* LocationBroker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationBroker.swift; sourceTree = "<group>"; };
 		F8603EBF1E87507A009E4DBB /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
-		F8603EC31E87E546009E4DBB /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +50,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8603EC01E87507A009E4DBB /* SwiftDate.framework in Frameworks */,
-				F8603EC81E8895E5009E4DBB /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				F8603EBA1E8656F5009E4DBB /* Cartfile */,
-				F8603EC31E87E546009E4DBB /* PromiseKit.framework */,
 				F8603EBF1E87507A009E4DBB /* SwiftDate.framework */,
 				F8603E991E8656D4009E4DBB /* Home Finder */,
 				F8603EAE1E8656D4009E4DBB /* Home FinderTests */,
@@ -224,7 +220,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -478,6 +473,7 @@
 				F8603EB61E8656D4009E4DBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8603EB71E8656D4009E4DBB /* Build configuration list for PBXNativeTarget "Home FinderTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +482,7 @@
 				F8603EB91E8656D4009E4DBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
