@@ -12,10 +12,11 @@ import CoreLocation
 class ViewController: UIViewController {
 
     @IBOutlet weak var lblLocation: UILabel!
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector:#selector(ViewController.updateUI), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+        UserDefaults.standard.addObserver(self, forKeyPath: "lastLocation", options: .new, context: nil)
         
         updateUI()
     }
@@ -23,6 +24,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "lastLocation" {
+            updateUI()
+        }
     }
 
     func updateUI() {

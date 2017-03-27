@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import PromiseKit
 
-let midnight: Int = 10
+let midnight: Int = 4
 
 class LocationBroker: NSObject, CLLocationManagerDelegate {
     let locationManager: CLLocationManager!
@@ -49,7 +49,7 @@ class LocationBroker: NSObject, CLLocationManagerDelegate {
         }
         
         if let location = morningLocations.first {
-            UserDefaults.standard.set("\(location.coordinate.latitude), \(location.coordinate.longitude) - \(location.timestamp.hour):\(location.timestamp.minute)", forKey: "lastLocation")
+            UserDefaults.standard.set("(\(location.coordinate.latitude), \(location.coordinate.longitude)) - \(location.timestamp.hour):\(location.timestamp.minute)", forKey: "lastLocation")
         } else {
             print("No Update! - \(now.hour):\(now.minute)")
         }
